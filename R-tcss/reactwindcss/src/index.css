@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font: 1em/1.618 Aquire, sans-serif;
+}
+.dark {
+  background: #ddd url(https://images.pexels.com/photos/2847648/pexels-photo-2847648.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)
+    center / cover no-repeat fixed;
+  font: 1em/1.618 Aquire, sans-serif;
+  color: #333;
+}
+.light {
+  background: #333  url(https://images.unsplash.com/photo-1579548122080-c35fd6820ecb?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+    center / cover no-repeat fixed;
+}
+body *{
+  @apply transition-colors duration-300;
+}
